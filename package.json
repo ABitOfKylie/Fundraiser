@@ -1,0 +1,31 @@
+{
+  "name": "fundraiser",
+  "version": "1.0.0",
+  "description": "An app intended for school organizations to keep track of past fundraisers.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "start": "nodemon --use-strict app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABitOfKylie/Fundraiser.git"
+  },
+  "author": "Kylie Soderblom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABitOfKylie/Fundraiser/issues"
+  },
+  "homepage": "https://github.com/ABitOfKylie/Fundraiser#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.5.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.5",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "serve-favicon": "^2.3.2",
+    "swig": "^1.4.2"
+  }
+}

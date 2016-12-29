@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+// var debug = require('debug')('standup');
+// var app = require('../app');
+
+// app.set('port', process.env.PORT || 3000);
+
+// var server = app.listen(app.get('port'), function() {
+//   debug('Express server listening on port ' + server.address().port);
+// });
+
+
+// alternative is to put the listener in the app.js file
+
+ //******************** listener
+// var port = process.env.PORT || 3000;
+
+// app.listen(port, function(){
+// 	console.log("Good things happen on Port: " + port);
+// 	console.log('Magic happens at http://localhost:' + port);
+//});
+
+
+
+
+
+
