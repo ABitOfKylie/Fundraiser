@@ -16,6 +16,15 @@ var requiredStringValidator = [
     // Custom error text...
     '{PATH} cannot be empty' ];
 
+// var subVendor = {
+//     vendorName:String,
+//     address: String,
+//     city: String,
+//     state: String,
+//     phone: String,
+//     contactPerson: String
+// }
+
 var fundraiserSchema = new Schema({
     fundraiserType: {
         type: String,
@@ -25,10 +34,15 @@ var fundraiserSchema = new Schema({
         type: String,
         required: true,
         validate: requiredStringValidator },
+    // revenue: {
+    //     type: Number,
+    //     required: true,
+    //     validate: requiredStringValidator },
     description: {
         type: String,
         required: true,
         validate: requiredStringValidator },
+    // vendor: [subVendor],
     vendor: {
         type: String,
         required: true,

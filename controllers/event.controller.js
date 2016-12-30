@@ -6,7 +6,7 @@ exports.list = function(req, res) {
     query.sort({ createdOn: 'desc'})
         .limit(12)
         .exec(function(err, results){
-           res.render('index', {title: 'Fundraiser - List', notes: results});
+           res.render('index', {title: 'Fundraiser - List', events: results});
         });
 
 };
@@ -23,7 +23,7 @@ exports.filterByFundraiser = function(req, res) {
     }
 
     query.exec(function(err, results) {
-        res.render('index', { title: 'Fundraiser - List', notes: results });
+        res.render('index', { title: 'Fundraiser - List', events: results });
     });
 };
 
@@ -34,6 +34,7 @@ exports.create = function(req, res) {
         profitLoss: req.body.profitLoss,
         description: req.body.description,
         vendor: req.body.vendor,
+        // revenue: req.body.revenue,
         prosCons: req.body.prosCons
     });
 
@@ -44,7 +45,7 @@ exports.create = function(req, res) {
         }
         else {
             console.log('Fundraiser - New Event was saved!');
-            // Redirect to the home page to display list of notes...
+            // Redirect to the home page to display list of events...
             res.redirect(301, '/');
         }
     });

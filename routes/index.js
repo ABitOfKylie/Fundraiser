@@ -23,3 +23,17 @@ router.post('/newevent', function(req, res) {
 });
 
 module.exports = router;
+
+//app.post('/signup', function(req, res) {
+        //     var user = new User({username: req.body.username, email: req.body.email});
+        //     bcrypt.genSalt(salt, function(err, salt) {
+        //         bcrypt.hash(req.body.password, salt, function(err, hash) {
+        //             user.password = hash;
+        //             user.save(function(err, response) {
+        //                 if (err) throw err;
+        //                 console.log('We saved: ', res);
+        //                 res.redirect('/index');
+        //             });
+        //         });
+        //     });
+        // });
