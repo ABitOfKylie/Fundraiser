@@ -3,9 +3,10 @@
 
 <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/css/style.css' />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+    <link rel='stylesheet' href='/css/style.css' />
+
     <!--     custom favicon below 2 links 
  -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -67,10 +68,10 @@
                 <div class="col-md-12 column list-group">
                     {% for event in events %}
                     <div class="list-group-item">
-                        <div>Type of Fundraiser: <em><strong>{{ event.fundraiserType }}</strong></em> on: {{ event.createdOn.toDateString() }} - Profit/Loss: <strong>{{ event.profitLoss }}</strong></div>
-                        <!--  of ${{revenue}}</div> -->
-<!--                         <div><strong>Revenue:</strong> {{ event.revenue }}</div>
- -->                        <div><strong>Description of Event and terms:</strong>{{event.description }}</div>
+                        <div>Type of Fundraiser: <em><strong>{{ event.fundraiserType }}</strong></em> on: {{ event.createdOn.toDateString() }} - Profit/Loss: <strong>{{ event.profitLoss }}</strong>
+                         of ${{event.revenue}}</div>
+                        <!-- <div><strong>Revenue:</strong> {{ event.revenue }}</div> -->
+                        <div><strong>Description of Event and terms:</strong>{{event.description }}</div>
                         <div><strong>Vendor:</strong> {{ event.vendor }}</div>
                         <div><strong>Pros and Cons:</strong> {{ event.prosCons }}</div>
                     </div>

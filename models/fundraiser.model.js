@@ -34,10 +34,9 @@ var fundraiserSchema = new Schema({
         type: String,
         required: true,
         validate: requiredStringValidator },
-    // revenue: {
-    //     type: Number,
-    //     required: true,
-    //     validate: requiredStringValidator },
+    revenue: {
+        type: Number,
+        required: true },
     description: {
         type: String,
         required: true,

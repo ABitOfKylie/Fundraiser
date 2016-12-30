@@ -34,7 +34,7 @@ exports.create = function(req, res) {
         profitLoss: req.body.profitLoss,
         description: req.body.description,
         vendor: req.body.vendor,
-        // revenue: req.body.revenue,
+        revenue: req.body.revenue,
         prosCons: req.body.prosCons
     });
 
