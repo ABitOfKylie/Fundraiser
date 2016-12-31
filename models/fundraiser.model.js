@@ -16,14 +16,17 @@ var requiredStringValidator = [
     // Custom error text...
     '{PATH} cannot be empty' ];
 
-// var subVendor = {
-//     vendorName:String,
-//     address: String,
-//     city: String,
-//     state: String,
-//     phone: String,
-//     contactPerson: String
-// }
+    var subVendor = {
+        vendor:String,
+        address: String,
+        city: String,
+        state: String,
+        phone: String,
+        website: String,
+        vEmail: String,
+        contactPerson: String,
+        notes: String
+    }
 
 var fundraiserSchema = new Schema({
     fundraiserType: {
@@ -41,15 +44,16 @@ var fundraiserSchema = new Schema({
         type: String,
         required: true,
         validate: requiredStringValidator },
-    // vendor: [subVendor],
-    vendor: {
-        type: String,
-        required: true,
-        validate: requiredStringValidator },
+    vendorInfo: [subVendor],
+    // vendor: {
+    //     type: String,
+    //     required: true,
+    //     validate: requiredStringValidator },
     prosCons: {
         type: String,
         required: true,
         default: 'none'},
+    eventDate: {type:Date},
     createdOn: { type: Date, default: Date.now }
 });
 

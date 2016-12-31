@@ -41,3 +41,59 @@ background: radial-gradient(ellipse at center,  rgba(44,83,158,1) 0%,rgba(44,83,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 }
+
+textarea{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f9fe+0,d6f0fd+100;White+3D+%232 */
+background: rgb(242,249,254); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6-15 */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(242,249,254,1)), color-stop(100%,rgba(214,240,253,1))); /* Chrome4-9,Safari4-5 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: -o-radial-gradient(center, ellipse cover,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* IE10 preview */
+background: radial-gradient(ellipse at center,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/*the following customized color navbar src: http://www.jquery2dotnet.com/2013/11/bootstrap-navigation-custom-design.html
+.navbar {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+    background-color: #563d7c;
+    border-color: #463265;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+    color: #fff;
+    border-radius: 0;
+}
+a.navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav > li > a {
+    color: #cdbfe3 !important;
+}
+.navbar-nav > .active a, .navbar-nav > .active > a:hover {
+    color: #fff !important;
+    background-color: #463265 !important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: #fff !important;
+    background-color: #463265 !important;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #463265 !important;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #463265 !important;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #fff !important;
+    }
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #fff !important;
+    background-color: transparent;
+}
+}*/
+

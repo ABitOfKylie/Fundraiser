@@ -31,6 +31,7 @@ exports.filterByFundraiser = function(req, res) {
 exports.create = function(req, res) {
     var entry = new Fundraiser({
         fundraiserType: req.body.fundraiserType,
+        eventDate: req.body.eventDate,
         profitLoss: req.body.profitLoss,
         description: req.body.description,
         vendor: req.body.vendor,
