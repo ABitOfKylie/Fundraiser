@@ -2,19 +2,37 @@ var express = require('express');
 var router = express.Router();
 var eventCtrl = require('../controllers/event.controller');
 
-/* GET home page. */
-router.get('/', function(req, res) {
+/* GET home page.  in this round home page = 'users' html*/
+
+// router.get('/', function(req, res){
+//     return eventCtrl.google(req, res);
+// });
+/* GET users  */
+
+
+// router.get('/', function(req, res){
+//     res.render('users', {user: {name:req.user.displayName, 
+//                          image: req.user._json.image.url}});
+// });
+
+router.get('/', function(req, res){
+    res.render('index', {title: 'Fundraiser App Fri'});
+
+});
+
+/*GET listing of past events*/
+router.get('/pastevents', function(req, res) {
   return eventCtrl.list(req, res);
 });
 
-/* POST filter by fundraiser name - home page. */
-router.post('/', function(req, res) {
+/* POST filter by fundraiser name - pastevents page. */
+router.post('/pastevents', function(req, res) {
     return eventCtrl.filterByFundraiser(req, res);
 });
 
 /* GET new Event page. */
 router.get('/newevent', function(req, res) {
-    return eventCtrl.getNote(req, res);
+    return eventCtrl.getEvent(req, res);
 });
 
 /* POST New Event page. */

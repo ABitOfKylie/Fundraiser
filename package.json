@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,12 @@
     "cookie-parser": "^1.4.3",
     "debug": "^2.5.2",
     "express": "^4.14.0",
+    "express-session": "^1.14.2",
     "mongoose": "^4.7.5",
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
     "serve-favicon": "^2.3.2",
     "swig": "^1.4.2"
   }

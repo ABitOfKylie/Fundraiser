@@ -1,12 +1,20 @@
 var Fundraiser = require('../models/fundraiser.model.js');
+var User = require('../models/user.model.js');
+
+// exports.google = function(req, res){
+//       res.render('users', {user: {name: req.user.displayName,
+//                               image: req.user._json.image.url}});
+// };
+
+
 
 exports.list = function(req, res) {
     var query = Fundraiser.find();
 
-    query.sort({ createdOn: 'desc'})
+    query.sort({ eventDate: 'desc'})
         .limit(12)
         .exec(function(err, results){
-           res.render('index', {title: 'Fundraiser - List', events: results});
+           res.render('pastevents', {title: 'Fundraiser - List', events: results});
         });
 
 };
@@ -15,7 +23,7 @@ exports.filterByFundraiser = function(req, res) {
     var query = Fundraiser.find();
     var filter = req.body.fundraiserType;
 
-    query.sort({ createdOn: 'desc' });
+    query.sort({ eventDate: 'desc' });
 
     if (filter.length > 0)
     {
@@ -23,7 +31,7 @@ exports.filterByFundraiser = function(req, res) {
     }
 
     query.exec(function(err, results) {
-        res.render('index', { title: 'Fundraiser - List', events: results });
+        res.render('pastevents', { title: 'Fundraiser - List', events: results });
     });
 };
 
@@ -53,6 +61,6 @@ exports.create = function(req, res) {
 
 };
 
-exports.getNote = function (req, res) {
+exports.getEvent = function (req, res) {
     res.render('newevent', { title: 'Fundraiser - New Event'});
 }

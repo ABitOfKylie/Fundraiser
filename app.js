@@ -4,8 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var passport = require('passport');
+var session = require('express-session');
+var GoogleStrategy = require('passport-google-oauth20').Strategy;
 var routes = require('./routes/index');
+var auth = require('./routes/auth');
+var users = require('./routes/users');
 
 // Mongoose ODM...
 var mongoose = require('mongoose');
@@ -30,6 +34,18 @@ mongoose.connect("mongodb://localhost:27017/fundraiser");
 
 var app = express();
 
+passport.use(new GoogleStrategy({
+    clientID: '1044360178305-pdp56c1v2nka3deikh4ojlhe87umjf0p.apps.googleusercontent.com',
+    clientSecret: 'WlvHBkq3_Q4AjeczvKV1jN3b',
+    callbackURL: "http://localhost:3000/auth/google/callback"
+  },
+  function(accessToken, refreshToken, profile, cb) {
+    User.findOrCreate({ googleId: profile.id }, function (err, user) {
+      return cb(err, user);
+    });
+  }
+));
+
 // assign the swig view engine to .html files...
 var swig = require('swig');
 app.engine('html', swig.renderFile);
@@ -39,8 +55,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
-// app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(favicon(__dirname + '/public/animated_favicon1.gif'));
+
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -48,7 +65,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({secret: 'anything'}));
+
+require('./config/passport')(app);
+
 app.use('/', routes);
+app.use('/auth', auth);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
