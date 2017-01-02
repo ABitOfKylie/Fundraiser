@@ -18,16 +18,20 @@
   },
   "homepage": "https://github.com/ABitOfKylie/Fundraiser#readme",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "debug": "^2.5.2",
     "express": "^4.14.0",
     "express-session": "^1.14.2",
+    "https": "^1.0.0",
     "mongoose": "^4.7.5",
     "morgan": "^1.7.0",
     "nodemon": "^1.11.0",
     "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
     "passport-google-oauth20": "^1.0.0",
+    "passport-twitter": "^1.0.4",
     "serve-favicon": "^2.3.2",
     "swig": "^1.4.2"
   }

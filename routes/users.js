@@ -7,18 +7,18 @@ var router = express.Router();
 // // 	res.render('users', req.user);
 // // });
 
-// router.use('/', function (req, res, next) {
+router.use('/', function (req, res, next) {
 
-//         if (!req.user) {
-//             res.redirect('/');
-//         }
-//         next();
-//  })
+        if (!req.user) {
+            res.redirect('index');
+        }
+        next();
+ })
 
 router.get('/', function(req, res){
-    // res.render ('users', {user: {name: req.user.displayName, 
-    // 						image: req.user._json.image.url}})
-    res.render('users', {user:req.user});
+    res.render ('users', {user: {name: req.user.displayName, 
+    						image: req.user.image}});
+    // res.render('users', {user:req.user});
 });
 
 module.exports = router; 

@@ -25,12 +25,13 @@ module.exports = function () {
                 } else {
                     console.log('not found');
                     var user = new User;
-
+                    
+                    // google gives a array of emails -- take the first one[0]
                     user.email = profile.emails[0].value;
                     user.image =
                         profile._json.profile_image_url;
                     user.displayName = profile.displayName;
-
+                    // user specific - place for user spec. tokens in user.google
                     user.google = {};
                     user.google.id = profile.id;
                     user.google.token = accessToken;

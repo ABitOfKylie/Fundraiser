@@ -9,7 +9,7 @@ background: -ms-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 1
 background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=0 ); /* IE6-9 */
 
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -59,6 +59,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', end
     background-color:white;
     border: solid 2px black;
     border-radius: 20px;
+}
+
+#leadText{
+    font-family: 'Lora', serif;
+    font-size: 45px;
+    -webkit-animation-duration: 4s;
+}
+
+#userImg{
+    padding:50px, 20px, 20px, 20px;
 }
 
 /*the following customized color navbar src: http://www.jquery2dotnet.com/2013/11/bootstrap-navigation-custom-design.html

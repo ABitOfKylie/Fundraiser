@@ -16,7 +16,7 @@ var eventCtrl = require('../controllers/event.controller');
 // });
 
 router.get('/', function(req, res){
-    res.render('index', {title: 'Fundraiser App Fri'});
+    res.render('index', {title: "Your School/Organization's Name"});
 
 });
 
