@@ -19,6 +19,15 @@ router.get('/', function(req, res){
     res.render('index', {title: "Your School/Organization's Name"});
 
 });
+/*GET go to vendor form*/
+router.get('/vendor', function(req, res) {
+    res.render('vendor', {title: "Your School/Organization's Name"});
+});
+
+/*GET go to temporary play login form*/
+router.get('/login', function(req, res) {
+    res.render('login', {title: "Your School/Organization's Name"});
+});
 
 /*GET listing of past events*/
 router.get('/pastevents', function(req, res) {

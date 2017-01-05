@@ -22,9 +22,8 @@ exports.list = function(req, res) {
 exports.filterByFundraiser = function(req, res) {
     var query = Fundraiser.find();
     var filter = req.body.fundraiserType;
-
+    console.log(filter);
     query.sort({ eventDate: 'desc' });
-
     if (filter.length > 0)
     {
         query.where({ fundraiserType: filter})
@@ -55,7 +54,7 @@ exports.create = function(req, res) {
         else {
             console.log('Fundraiser - New Event was saved!');
             // Redirect to the home page to display list of events...
-            res.redirect(301, '/');
+            res.redirect(301, '/pastevents');
         }
     });
 
