@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 var eventCtrl = require('../controllers/event.controller');
 
-/* GET home page.  in this round home page = 'users' html*/
+/* GET home page.  in this round first page = 'index' html*/
 
 // router.get('/', function(req, res){
 //     return eventCtrl.google(req, res);
 // });
 /* GET users  */
 
-
+// moved below to routes/users.js
 // router.get('/', function(req, res){
 //     res.render('users', {user: {name:req.user.displayName, 
 //                          image: req.user._json.image.url}});

@@ -1,3 +1,13 @@
+/*
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5; }
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #00BCD4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }*/
+
 body {
 	border:4px #050108;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+20,2989d8+50,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100;Blue+Two+Sided+Transparent */
@@ -12,6 +22,107 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+#bodyIndex{
+    display:table-cell;
+    vertical-align:middle;
+
+  background-color: #303F9F;
+      padding: 15px;    
+      border: 10px solid transparent;
+ /*  border-image-slice: 
+ #borderimg3 {
+    -webkit-border-image: url(border.png) round;  Safari 3.1-5 
+    -o-border-image: url(border.png) round; /* Opera 11-12.1 
+    border-image: url(border.png) round;
+    border-image-slice: 30%;
+}*/
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+ }
+
+
+
+#bar {
+  -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+  -ms-flex-order: 2;              /* TWEENER - IE 10 */
+  -webkit-order: 2;               /* NEW - Chrome */
+  order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  width: 60%;                     /* No flex here, other cols take up remaining space */
+  
+  -moz-box-flex: 1;               /* Without this, Firefox 19- expands to widest paragraph, overrides width */
+  
+  background: white;
+}
+
+.introText {
+  -webkit-box-ordinal-group: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 1;      /* OLD - Firefox 19- */
+  -ms-flex-order: 1;              /* TWEENER - IE 10 */
+  -webkit-order: 1;               /* NEW - Chrome */
+  order: 1;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  -webkit-box-flex: 1;            /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;               /* OLD - Firefox 19- */
+  width: 20%;                     /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;                /* Chrome */
+  -ms-flex: 1;                    /* IE 10 */
+  flex: 1;                        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  background: #ccc;
+}
+
+#introText2 {
+  -webkit-box-ordinal-group: 3;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-ordinal-group: 3;      /* OLD - Firefox 19- */
+  -ms-flex-order: 3;              /* TWEENER - IE 10 */
+  -webkit-order: 3;               /* NEW - Chrome */
+  order: 3;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  -webkit-box-flex: 1;            /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;               /* Firefox 19- */
+  width: 20%;                     /* For OLD syntax, otherwise collapses. */
+  -ms-flex: 1;                    /* TWEENER - IE 10 */
+  -webkit-flex: 1;                /* NEW - Chrome */
+  flex: 1;                        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  
+  background: #ccc;
+}
+
+#bar,
+#introText2,
+.introText {
+  padding: 1em;
+}
+
+body {
+  padding: 2em;
+  background: #79a693;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font: bold 2em Sans-Serif;
+  margin: 0 0 1em 0;
+}
+h2 {
+  font-size: 1.5em;
+}
+p {
+  margin: 0 0 1em 0;
+}
+
+/*end of 3rd attempt*/
 
 .navbar {
 background: rgb(73,155,234); /* Old browsers */
@@ -53,22 +164,79 @@ background: -ms-radial-gradient(center, ellipse cover,  rgba(242,249,254,1) 0%,r
 background: radial-gradient(ellipse at center,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+.googleplus{
+    padding:5px, 15px, 5px, 15px;
+}
+
+.twitter{
+    padding:5px, 15px, 5px, 15px;
+}
+
+.fishtail { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #00BCD4; 
+  border-width: 10px 0 0 0; 
+  border-radius: 20px; 
+} 
+.fishtail:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #00BCD4; 
+  border-width: 0 0 5px 0; 
+  border-radius: 20px; 
+  color:black;
+}
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #00BCD4; 
+  border-width: 5px 0 0 0; 
+  border-radius: 20px; 
+  color:black;
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #303F9F; 
+  border-width: 0 0 10px 0; 
+  border-radius: 20px; 
+}
 
 #bar{
-    padding:10px;
-    background-color:white;
-    border: solid 2px black;
+    padding:10px, 5px, 5px, 15px;
+    background-color:violet;
+    border: solid 3px black;
     border-radius: 20px;
+    width:30%;
+  /*  margin-right:auto;
+    margin-left:auto;*/
+    float: left;
+    /*display: inline;*/
 }
+
 
 #leadText{
     font-family: 'Lora', serif;
     font-size: 45px;
-    -webkit-animation-duration: 4s;
-}
+    -webkit-animation-duration: 2s;
+/*    text-align: center;
+*/}
 
 #userImg{
-    padding:50px, 20px, 20px, 20px;
+    margin-top:80px;
+    padding:20px, 20px, 20px, 20px;
+}
+.menuImg{
+    width:200px;
+    height:200px;
+    border:2px black solid;
 }
 
 .badge{
@@ -81,6 +249,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', end
     float: left;
 }
 
+.introText{
+    font-family: "Lora" serif;
+    font-size: 22px;
+    color:white;
+    border-color: black;
+    border-radius: 20px;
+    padding:20px;
+    /*width:30%;*/
+    /*display: :inline-block;*/
+}
+.introText2{
+    font-family: "Lora" serif;
+    font-size: 22px;
+    color:white;
+    border-color: black;
+    border-radius: 20px;
+    padding:20px;
+    /*width:30%;*/
+    /*display: :inline-block;*/
+
+}
+/*users (soon to be home page)*/
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px;
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
 /*the following customized color navbar src: http://www.jquery2dotnet.com/2013/11/bootstrap-navigation-custom-design.html
 .navbar {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);

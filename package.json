@@ -33,6 +33,7 @@
     "passport-google-oauth20": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "serve-favicon": "^2.3.2",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "wowjs": "^1.1.3"
   }
 }
