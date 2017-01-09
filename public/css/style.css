@@ -43,6 +43,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', e
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+  max-height: 300px;
+  max-width:100%;
  }
 
 
@@ -133,21 +135,29 @@ hr.style18:before {
 
 #bar{
     padding:10px, 5px, 5px, 15px;
-    background-color:#757575;
+    background-color:#303F9F;
     border: solid 3px black;
     border-radius: 20px;
-    width:30%;
+    width:100%;
+    text-align: center;
   /*  margin-right:auto;
     margin-left:auto;*/
-    float: left;
+    /*float: left;*/
     /*display: inline;*/
 }
+.barH2{
+  font-family: 'Lora', serif;
+    font-size: 35px;
+    color:#0288D1;
+    font-style: bold;
 
+}
 
 #leadText{
     font-family: 'Lora', serif;
     font-size: 45px;
     -webkit-animation-duration: 2s;
+    color:#212121;
 /*    text-align: center;
 */}
 
@@ -171,6 +181,10 @@ hr.style18:before {
     float: left;
 }
 
+.socialLine{
+  text-align: center;
+  /*padding-left:36em;*/
+}
 .introText{
     font-family: "Lora" serif;
     font-size: 22px;
@@ -178,7 +192,7 @@ hr.style18:before {
     border-color: black;
     border-radius: 20px;
     padding:20px;
-    /*width:30%;*/
+    /*max-width: 100%    */
     /*display: :inline-block;*/
 }
 .introText2{
