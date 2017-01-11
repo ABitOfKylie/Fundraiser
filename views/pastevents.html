@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
     <link rel='stylesheet' href='/css/style.css' />
     <script src="https://use.fontawesome.com/c3a0b0a766.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
     <!--     custom favicon below 2 links 
  -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -31,6 +32,7 @@
                     <li><a href="/vendor">Vendors</a></li>
                     <li><a href="/vendor">Communications</a></li>
                 </ul>
+                <!-- <a href="/users"><img class="img-responsive leaf" src="/images/leaf.jpg"></a> -->
             </div>
             <!--/.nav-collapse -->
         </div>
@@ -42,13 +44,12 @@
             <h1>Past Fundraiser Events</h1>
             <p class="lead">This is a list of the last dozen fundraiser events that were entered in. </p>
         </div>
-        <div>
             <!--<h2>Latest Events</h2>-->
             <div class="container">
                 <!--Filter events list by fundraiser name-->
                 <form action="/pastevents" method="post">
                     <div class="row clearfix">
-                        <div class="col-md-3 column">
+                        <div class="col-md-4 column">
                             <select id="fundraiserType" name="fundraiserType" class="form-control">
                                 <option value="">(Show All Types of Fundraisers)</option>
                                 <option value="Restaurant">Restaurant</option>
@@ -56,12 +57,12 @@
                                 <option value="Services">Services</option>
                                 <option value="Donations">Donation Drives</option>
                             </select>
-                        <!-- </div>
-                        <div class="col-md-3 column"> -->
+                        </div>
+                        <!-- <div class="col-md-3 column"> -->
                             <!-- Button -->
                             <button id="btnFilterNotes" name="btnFilterNotes" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Filter Events...</button>
+                        <!-- </div> -->
                         </div>
-                    </div>
                 </form>
             </div>
             <br />  

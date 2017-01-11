@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel='stylesheet' href='/css/style.css' />
     <script src="https://use.fontawesome.com/c3a0b0a766.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
     <!--     custom favicon below 2 links 
  -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -30,12 +31,13 @@
                     <li><a href="/newevent">New Event</a></li>
                     <li><a href="/discuss">Communications</a></li>
                 </ul>
+                <!-- <a href="/"><img class="img-responsive leaf" src="/images/leaf.jpg"></a> -->
             </div>
             <!--/.nav-collapse -->
         </div>
     </div>
     <br>
-    <div id="userImg" class = 'authID'>
+    <div id="userImg" class='authID'>
         <strong><img src = "{{ user.image }}"></strong>
         <strong>Hello! {{ user.displayName }}</strong>
         <hr>
@@ -44,10 +46,64 @@
         <ul class="social list-inline">
             <li>
                 <a href="/auth/google" class="googleplus"><i class="fa fa-google-plus"></i></a>
+                <a href="/auth/twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+
             </li>
         </ul>
     </div>
-    <figure>
+    <div class="container">
+        <!-- Top Navigation -->
+        <div class="content">
+            <!-- <div class="row row-eq-height"> -->
+            <!-- <div class=" col-xs-8-offset-2"> -->
+            <h2>Zoe</h2>
+            <div class="grid">
+                <figure class="effect-zoe">
+                    <a href="/pastevents">
+                        <img src="/images/fundraising.jpg" alt="money tree"></a>
+                    <!-- <img src="/images/fundraising.jpg" alt="money tree" /> -->
+                    <figcaption>
+                        <h2>Fundraising <span>Zoe</span></h2>
+                        <p class="icon-links">
+                            <a href="#"><span class="icon-heart"></span></a>
+                            <a href="#"><span class="icon-eye"></span></a>
+                            <a href="#"><span class="icon-paper-clip"></span></a>
+                        </p>
+                        <p class="description">Plan new event, Review Past Events and Vendor Information</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-zoe">
+                    <img src="/images/fundraising.jpg" alt="money tree" />
+                    <figcaption>
+                        <h2>Publicity <span>Zoe</span></h2>
+                        <p class="icon-links">
+                            <a href="#"><span class="icon-heart"></span></a>
+                            <a href="#"><span class="icon-eye"></span></a>
+                            <a href="#"><span class="icon-paper-clip"></span></a>
+                        </p>
+                        <p class="description">Community Contacts, Marketing Materials, Media Expenses</p>
+                    </figcaption>
+                </figure>
+                <figure class="effect-zoe">
+                    <img src="/images/fundraising.jpg" alt="money tree" />
+                    <figcaption>
+                        <h2>Communications <span>Zoe</span></h2>
+                        <p class="icon-links">
+                            <a href="#"><span class="icon-heart"></span></a>
+                            <a href="#"><span class="icon-eye"></span></a>
+                            <a href="#"><span class="icon-paper-clip"></span></a>
+                        </p>
+                        <p class="description">Community Contacts, Marketing Materials, Media Expenses</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<!-- <figure>
         <img src='/images/fundraising.jpg' class = menuImg alt='coins' />
         <figcaption>Fundraising
             <br>Plan new event, Review Past Events
@@ -64,7 +120,4 @@
         <figcaption>Communications
             <br>Member Database, Patrons, Sponsors
             <br>Newsletters, group emails</figcaption>
-    </figure>
-</body>
-
-</html>
+    </figure> -->

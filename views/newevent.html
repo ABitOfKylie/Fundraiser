@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
     <link rel='stylesheet' href='/css/style.css' />
     <script src="https://use.fontawesome.com/c3a0b0a766.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" type="image/gif" href="animated_favicon1.gif">
 </head>
@@ -29,7 +30,6 @@
                     <li class="active"><a href="/newevent">New Event</a></li>
                     <li><a href="/vendor">Vendors</a></li>
                     <li><a href="/login">Communications</a></li>
-                    
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -48,6 +48,7 @@
         </div>
         {% endif %}
         <form class="form-horizontal" action="newevent" method="post">
+            <div class="row clearfix">
             <fieldset>
                 <!-- Form Name -->
                 <legend>Enter a Fundraising Event</legend>
@@ -64,81 +65,79 @@
                         </select>
                     </div>
                 </div>
-
-                 <!-- Date of Event -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="eventDate">Date of Event</label>
-                            <div class="col-md-6">
-                                <input type="date" class="form-control" id="eventDate" name="eventDate">
-                            </div>
-                        </div>
-                <!-- Select Basic -->
-                
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="profitLoss">Profit, Loss</label>
-                        <div class="col-md-4">
-                            <select id="profitLoss" name="profitLoss" class="form-control">
-                                <option value="None">(Select One)</option>
-                                <option value="Profit">Profit</option>
-                                <option value="Loss">Loss</option>
-                                <option value="BreakEven">Break Even</option>
-                            </select>
-                        </div>
+                <!-- Date of Event -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventDate">Date of Event</label>
+                    <div class="col-md-4">
+                        <input type="date" class="form-control" id="eventDate" name="eventDate">
                     </div>
-
-                    <!-- Revenue -->
-
-                        <div class="form-group" >
-                            <label class="col-md-4 control-label" for="revenue">Revenue (in dollars)</label>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="revenue" name="revenue" placeholder="Amount">
-                            </div>
-                        </div>
-                
-                
-
-                        <!-- Description -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="description">Description of event and terms</label>
-                            <div class="col-md-6">
-                                <textarea class="form-control" id="description" name="description" placeholder="Briefly describe the event and vendor terms"></textarea>
-                            </div>
-                        </div>
-                        <!-- Vendor changing to input fields -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="vendor">Name of vendor, restaurant or venue</label>
-                            <div class="col-md-6">
-                                <textarea class="form-control" id="vendor" name="vendor" placeholder="Vendor Name"></textarea>
-                            </div>
-                        </div>
-                        <!-- Textarea - Pros Cons -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="prosCons">List of Pros and Cons</label>
-                            <div class="col-md-6">
-                                <textarea class="form-control" id="prosCons" name="prosCons" placeholder="Organizer's Comments here" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-group">
-                            <!-- <label class="col-md-4 control-label" for="btnSaveEvent"></label> -->
-                            <div class="col-md-4">
-                                <button id="btnSaveEvent" name="btnSaveEvent" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Save</button>
-                            </div>
-                        </div>   
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="profitLoss">Profit, Loss</label>
+                    <div class="col-md-2">
+                        <select id="profitLoss" name="profitLoss" class="form-control">
+                            <option value="None">(Select One)</option>
+                            <option value="Profit">Profit</option>
+                            <option value="Loss">Loss</option>
+                            <option value="BreakEven">Break Even</option>
+                        </select>
+                    </div>
+                        <!-- <label class="col-md-2 control-label" for="revenue">Revenue </label> -->
+                    <div class="col-md-2">
+                        <input type="text" class="form-control" id="revenue" name="revenue" placeholder="Amount">
+                    </div>
+                </div>
+                <!-- Revenue -->
+                <!-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="revenue">Revenue (in dollars)</label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="revenue" name="revenue" placeholder="Amount">
+                    </div>
+                </div> -->
+                <!-- Description -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="description">Description of event and terms</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="description" name="description" placeholder="Briefly describe the event and vendor terms"></textarea>
+                    </div>
+                </div>
+                <!-- Vendor changing to input fields -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="vendor">Name of vendor, restaurant or venue</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="vendor" name="vendor" placeholder="Vendor Name"></textarea>
+                    </div>
+                </div>
+                <!-- Textarea - Pros Cons -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="prosCons">List of Pros and Cons</label>
+                    <div class="col-md-6">
+                        <textarea class="form-control" id="prosCons" name="prosCons" placeholder="Organizer's Comments here" rows="5"></textarea>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="form-group">
+                    <!-- <label class="col-md-4 control-label" for="btnSaveEvent"></label> -->
+                    <div class="col-md-4 col-md-offset-9">
+                        <button id="btnSaveEvent" name="btnSaveEvent" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">Save</button>
+                    </div>
+                </div>
             </fieldset>
-            </form>
-                        <!--Vendor Button -->
-                        <!-- <div class="form-group" >
+            </div>
+        </form>
+        <!--Vendor Button -->
+        <!-- <div class="form-group" >
                             <label class="col-md-4 control-label" for="btnSaveEvent">Vendor Info</label> -->
-                            <div class="col-md-4">
-                                <!-- <button href ="/vendor" id="btnVendor" name="btnVendor" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">GotoVendorDetails</button> -->
-                                <a href="/vendor">
+        <!-- <div class="col-md-4"> -->
+        <!-- <button href ="/vendor" id="btnVendor" name="btnVendor" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit">GotoVendorDetails</button> -->
+        <!-- <a href="/vendor">
                                 <input type="submit" class = "btn btn-primary" name="btnVendor" value="GotoVendorDetails">
                                 </a>
-                            </div>
-                        <!-- </div> -->
-            </div>
-            <!-- /.container -->
+                            </div> -->
+        <!-- </div> -->
+    </div>
+    <!-- /.container -->
 </body>
 
 </html>
