@@ -19,7 +19,7 @@ router.get('/', function(req, res){
     res.render('index', {title: "Your School/Organization's Name"});
 
 });
-/*GET go to vendor form*/
+/*GET go to vendor for listing, vendor form in modal???*/
 router.get('/vendor', function(req, res) {
     res.render('vendor', {title: "Your School/Organization's Name"});
 });

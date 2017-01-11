@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel='stylesheet' href='/css/style.css' />
-
     <script src="https://use.fontawesome.com/c3a0b0a766.js"></script>
     <!--     custom favicon below 2 links 
  -->
@@ -17,48 +17,104 @@
 </head>
 
 <body id="bodyIndex">
-    <div class="container">
-        <div class="text-center" id="indexHeader">
-            <br></br>
-            <h1 class="animated zoomInDown" id="leadText"><i class="fa fa-book" aria-hidden="true"></i> Making Opportunities Happen <i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
-            <p class="lead">{{title}} </p>
-            <!-- <hr> -->
-        
+    <!-- <div class="container"> -->
+    <!-- <div class = "jumbotron"> -->
+    <div class="text-center" id="indexHeader">
+        <br></br>
+        <h1 class="animated zoomInDown" id="leadText"><i class="fa fa-book" aria-hidden="true"></i> Making Opportunities Happen <i class="fa fa-graduation-cap" aria-hidden="true"></i></h1>
+        <!-- <p class="lead">{{title}} </p> -->
+        <h1> Welcome to the site that makes it easier to make a difference.</h1>
+        <!-- <hr> -->
         <!-- <hr class="fishtail"> -->
         <hr class="style18">
         <!--<h2>Latest Events</h2>-->
-        </div>
-            <div class="row row-eq-height socialLine>
-        <div class="col-xs-6"><!-- <div class="item"><div class="content"></div></div></div> -->
-                <div class="introText">
-                    <p> Welcome to the site that makes it easier to make a difference.</p>
+    </div>
+    <!-- </div> -->
+    <div class="container">
+        <div class="row row-eq-height">
+            <div class=" col-xs-5">
+            
+
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/leaf.jpg">
+                            <span class="name">What's Inside?</span>
+                        </div>
+                        <div class="back">
+                            <div class="back-logo"><span class="glyphicons glyphicons-leaf"></span></div>
+                            <div class="back-title"></div>
+                            <p>Inside you can choose between three main categories: Fundraising | Publicity | Communications. Keep track of your vendors, patrons, members all stored securely in our database .... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/leaf.jpg">
+                            <span class="name">Who Can Use It?</span>
+                        </div>
+                        <div class="back">
+                            <div class="back-logo"><span class="glyphicons glyphicons-leaf"></span></div>
+                            <div class="back-title"></div>
+                            <p>Ideal for Community Sports Organizations, School Booster Clubs and PTA/PFA groups as well as Charity Organizations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/leaf.jpg">
+                            <span class="name">What Can You Do?</span>
+                        </div>
+                        <div class="back">
+                            <div class="back-logo"><span class="glyphicons glyphicons-leaf"></span></div>
+                            <div class="back-title"></div>
+                            <p>You can view the details of past fundraising events, find vendor information, publicity contacts, create templates, use Mail Chimp to send out emails/newsletters & more </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/leaf.jpg">
+                            <span class="name">About Us?</span>
+                        </div>
+                        <div class="back">
+                            <div class="back-logo"><span class="glyphicons glyphicons-leaf"></span></div>
+                            <div class="back-title"></div>
+                            <p>We create customized websites that make it easy for your organization to store and retrieve valuable information. See our website: www.greatDesigns.com  </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        <div class="col-xs-6"><!-- <div class="item"><div class="content"></div></div></div> -->
+            <div class="col-xs-5 col-xs-offset-2 col-responsive">
+                <!-- <div class="introText ">
+                    <h1> Welcome to the site that makes it easier to make a difference.</h1>
+                </div> -->
+            <!-- <div class= "imgB"> -->
                 <section id="bar">
-                    <h2 class=barH2>Please Sign In</h2>
-                        <ul class="social list-inline">
-                            <li>
-                                <a href="/auth/google" class="googleplus"><i class="fa fa-google-plus fa-4x"></i></a>
-                                <!-- br> -->
-                                <a href="/auth/twitter" class="twitter"><i class="fa fa-twitter fa-4x"></i></a>
-                                <!-- <br> -->
-                                <a href="/auth/facebook" class="facebook"><i class="fa fa-facebook fa-4x"></i></a>
-                            </li>
-                        </ul>
+                    <h2 class="barH2">Please Sign In</h2>
+                    <ul class="social list-inline ">
+                        <li>
+                            <a href="/auth/google " class="googleplus "><i class="fa fa-google-plus fa-3x "></i></a>
+                            <!-- br> -->
+                            <a href="/auth/twitter " class="twitter "><i class="fa fa-twitter fa-3x "></i></a>
+                            <!-- <br> -->
+                            <a href="/auth/facebook " class="facebook "><i class="fa fa-facebook fa-3x "></i></a>
+                        </li>
+                    </ul>
+                    <img class ="img-responsive imgB" src="/images/fundraising.jpg">
                 </section>
+            <!-- </div> -->
+                <!-- <div>
+                    <img class ="img-responsive imgB" src="/images/fundraising.jpg">
+                </div> -->
             </div>
-        <div class="col-xs-6"><!-- <div class="item"><div class="content"></div></div></div> -->
-                        <div class="introText">
-                            <p>
-                                Inside you can choose between our three main categories: Fundraising, Publicity, and Communications.</p>
-                        </div>
-                        <!-- <br>
-                <br>You can view the details of past fundraising events find vendor information, publicity contacts, use Mail Chimp to send out a newsletter to the student body, your group members or the commmunity at large. Keep track of your patrons, donors and members stored securely in our database .... </p> -->
-            </div>
+        </div>
+        <!-- /.row -->
     </div>
-                <img src="..public/images/fundraising.jpg">
-    </div> <!-- /.container -->
+    <!-- /.container -->
 </body>
 
 </html>
